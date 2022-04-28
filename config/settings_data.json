@@ -96,6 +96,11 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo_new.png",
+    "checkout_logo_position": "center",
+    "checkout_accent_color": "#4c86a0",
+    "checkout_button_color": "#103948",
+    "checkout_error_color": "#ec8161",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
