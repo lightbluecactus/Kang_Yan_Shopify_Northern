@@ -15,6 +15,7 @@
         background: #fff;
         padding: 30px;
     }
+	
     
 {% endstylesheet %}
 
@@ -44,7 +45,7 @@
 
        {{ section.settings.content }}
 
-       {% if section.settings.button_link != blank and ection.settings.button_text != blank %}
+       {% if section.settings.button_link != blank and section.settings.button_text != blank %}
             <a href="{{ section.settings.button_link }}" class="btn">
                 {{ section.settings.button_text }}
             </a>
