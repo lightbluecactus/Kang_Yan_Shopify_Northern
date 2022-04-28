@@ -1,0 +1,37 @@
+<style>
+    .productListCon {
+      	width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      	justify-content: space-between;
+        list-style-type: none;
+    }
+
+    .productListCon li {
+        padding: 20px;
+    }
+</style>
+
+<div class="productList">
+    {% if heading != blank %}
+        <h2>{{ heading }}</h2>
+    {% endif %}
+ 
+    <ul class="productListCon">
+        {% for product in collections[collection_handle].products %}
+            
+            <li>
+                <img src="{{ product.featured_image | image_url: width: 50 }}" alt="" loading="lazy" width="50" height="50"> 
+                <h3>{{ product.title }} </h3>
+
+                <div><del>{{ product.compare_at_price | money_with_currency }}</del> - {{ product.price | money_with_currency }}</div>
+                
+                <a href="#" class="button" {% if product.available %} disabled {% endif %}>
+                    {{ 'general.shop_now.shop_now' | t }}
+                </a>
+            </li>
+
+       {% endfor %}
+    </ul>
+
+</div>
