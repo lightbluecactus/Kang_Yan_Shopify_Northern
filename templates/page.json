@@ -11,9 +11,9 @@
       "type": "call-to-action",
       "settings": {
         "background_image": "shopify:\/\/shop_images\/slide-6-white.jpg",
-        "heading": "View our products",
+        "heading": "View our blogposts",
         "content": "<p>Going into the amazing kindom of stationery.<\/p>",
-        "button_link": "shopify:\/\/collections\/all",
+        "button_link": "shopify:\/\/blogs\/新聞\/journal-ideas",
         "button_text": "Learn more"
       }
     },
