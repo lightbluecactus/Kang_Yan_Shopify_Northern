@@ -7,11 +7,6 @@
         "padding_bottom": 28
       }
     },
-    "product-list": {
-        "type": "product-list",
-        "settings": {
-        }
-    },
     "1651173340c24a008f": {
       "type": "call-to-action",
       "settings": {
@@ -20,6 +15,13 @@
         "content": "<p>Going into the amazing kindom of stationery.<\/p>",
         "button_link": "shopify:\/\/collections\/all",
         "button_text": "Learn more"
+      }
+    },
+    "product-list": {
+      "type": "product-list",
+      "settings": {
+        "heading": "Product List",
+        "collection": "weekly-special"
       }
     }
   },
