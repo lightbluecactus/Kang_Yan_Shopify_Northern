@@ -7,6 +7,11 @@
         "padding_bottom": 28
       }
     },
+    "product-list": {
+        "type": "product-list",
+        "settings": {
+        }
+    },
     "1651173340c24a008f": {
       "type": "call-to-action",
       "settings": {
@@ -20,6 +25,7 @@
   },
   "order": [
     "main",
-    "1651173340c24a008f"
+    "1651173340c24a008f",
+    "product-list"
   ]
 }
