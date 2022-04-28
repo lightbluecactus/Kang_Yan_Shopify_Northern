@@ -15,6 +15,13 @@
         background: #fff;
         padding: 30px;
     }
+
+	#ctaBtn {
+		text-decoration: none;
+		color: #103948;
+		border-radius: 20px;
+		border: 3px solid #103948;
+	}
 	
     
 {% endstylesheet %}
@@ -46,7 +53,7 @@
        {{ section.settings.content }}
 
        {% if section.settings.button_link != blank and section.settings.button_text != blank %}
-            <a href="{{ section.settings.button_link }}" class="btn">
+            <a href="{{ section.settings.button_link }}" class="btn" id="ctaBtn">
                 {{ section.settings.button_text }}
             </a>
        {% endif %}
