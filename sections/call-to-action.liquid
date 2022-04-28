@@ -16,7 +16,7 @@
         padding: 30px;
     }
 
-	#ctaBtn {
+	.callToActionBtn {
 		margin-top: 30px;
 		text-decoration: none;
 		color: #fff;
@@ -55,7 +55,7 @@
        {{ section.settings.content }}
 
        {% if section.settings.button_link != blank and section.settings.button_text != blank %}
-            <a href="{{ section.settings.button_link }}" class="btn" id="ctaBtn">
+            <a href="{{ section.settings.button_link }}" class="btn callToActionBtn">
                 {{ section.settings.button_text }}
             </a>
        {% endif %}
