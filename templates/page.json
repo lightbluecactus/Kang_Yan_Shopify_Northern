@@ -6,9 +6,20 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "1651173340c24a008f": {
+      "type": "call-to-action",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/slide-6-white.jpg",
+        "heading": "View our products",
+        "content": "<p>Going into the amazing kindom of stationery.<\/p>",
+        "button_link": "shopify:\/\/collections\/all",
+        "button_text": "Learn more"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1651173340c24a008f"
   ]
 }
