@@ -1,8 +1,10 @@
+{{ 'featured-blog-post.css' | asset_url | stylesheet_tag }}
+
 <h1>{{ section.settings.title | escape }}</h1>
 
 {%- assign blog = blogs[section.settings.blog] -%}
 
-{%- if blog.articles_count > 0 -%}
+{%- if blog.articles != blank -%}
   <ul>
 
     {%- for article in blog.articles limit: section.settings.post_limit -%}
@@ -68,7 +70,7 @@
   <a href="{{ blog.url }}"
     class="btn"
     aria-label="{{ 'blogs.article.view_all_blogs' }}">
-    {{ 'blogs.article.view_all' }}
+    {{ 'blogs.article.view_all' | t }}
   </a>
 {%- endif -%}
 
