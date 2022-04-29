@@ -17,6 +17,10 @@
   font-size: 28px;
 }
 
+.featuredBlogPostTitle:hover {
+  border-bottom: 3px solid #103948;
+}
+
 .featuredBlogPostReadMore {
   text-decoration: none; !important
   display: none;
