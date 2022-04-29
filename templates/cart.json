@@ -49,11 +49,46 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "165119002482e0e552": {
+      "type": "newsletter",
+      "blocks": {
+        "1651190024d9b25b5e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "1651190024d9b25b5e-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        },
+        "1651190024d9b25b5e-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>By registering your email in the form, you agree to receive newsletter from us. Subscribing is optional and you can cancel it at any time.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1651190024d9b25b5e-0",
+        "1651190024d9b25b5e-2",
+        "1651190024d9b25b5e-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "cart-items",
     "cart-footer",
-    "featured-collection"
+    "featured-collection",
+    "165119002482e0e552"
   ]
 }
