@@ -1,5 +1,6 @@
 {{ 'featured-blog-post.css' | asset_url | stylesheet_tag }}
 
+<div class="featuredBlogPost">
 <h1>{{ section.settings.title | escape }}</h1>
 
 {%- assign blog = blogs[section.settings.blog] -%}
@@ -11,7 +12,7 @@
       <li>
         <a href="{{ article.url }}">
           {%- if article.image -%}
-            {{ article | img_url: '150x150', scale: 2 | img_tag: '' }}
+            {{ article | img_url: width: 500, scale: 2 | img_tag: '' }}
           {%- endif -%}
           <h2>{{ article.title }}</h2>
         </a>
@@ -73,6 +74,8 @@
     {{ 'blogs.article.view_all' | t }}
   </a>
 {%- endif -%}
+  
+</div>
 
 {% schema %}
 {
