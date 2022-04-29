@@ -4,9 +4,9 @@
  }
 
  .featuredBlogPost ul {
-   list-style: none;\
+   list-style: none;
  }
 
 .featuredBlogPost img {
-  width: 90vw;
+  width: 100%;
 }
