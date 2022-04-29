@@ -21,6 +21,10 @@
   color: #4C86A0;
 }
 
+.featuredBlogPostExcerpt {
+  width: 90%;
+}
+
 .featuredBlogPostReadMore {
   text-decoration: none; !important
   display: none;
