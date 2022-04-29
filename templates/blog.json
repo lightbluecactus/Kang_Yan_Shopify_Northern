@@ -3,8 +3,8 @@
     "1651210179d1d175a1": {
       "type": "featured-blog-post",
       "settings": {
-        "title": "Featured Blog posts",
-        "blog": "新聞",
+        "title": "Featured Blog post",
+        "blog": "tricks-and-notes",
         "post_limit": 3,
         "blog_show_author": false,
         "blog_show_date": true,
