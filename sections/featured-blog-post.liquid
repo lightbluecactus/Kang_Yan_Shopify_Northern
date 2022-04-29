@@ -48,6 +48,7 @@
         	{%- endif -%}
         </p>
 
+        <div class="article-card__excerpt rte-width blogTags">
         {%- if article.tags.size > 0 -%}
           <ul aria-label="{{ 'blogs.article.tags' }}">
           {%- for tag in article.tags -%}
@@ -57,9 +58,10 @@
           {%- endfor -%}
           </ul>
         {%- endif -%}
+        </div>
 
         <ul>
-          <li>
+          <li class="article-card__excerpt rte-width">
             <a href="{{ article.url }}" aria-label="Read more: {{ article.title }}">
               Read more
             </a>

@@ -11,3 +11,9 @@
   width: 100%;
   height: auto;
 }
+
+.blogTags {
+  background-color: #FFA489;
+  color: #fff;
+  padding: 10px 20px;
+}
