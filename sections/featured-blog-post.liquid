@@ -10,7 +10,7 @@
 
     {%- for article in blog.articles limit: section.settings.post_limit -%}
       <li>
-        <a href="{{ article.url }}">
+        <a href="{{ article.url }}" class="full-unstyled-link">
           {%- if article.image -%}
             <img 
             srcset="
@@ -25,7 +25,7 @@
             sizes="{% if article.image != blank %}(min-width: 750px) 50vw, 100vw{% elsif article.image != blank %}50vw{% else %}100vw{% endif %}"
             src="{{ article.image | image_url: width: 500 }}" alt="decoration image" width="500" height="200" loading="lazy">
           {%- endif -%}
-          <h2>{{ article.title }}</h2>
+          <h2 class="card__heading h2">{{ article.title }}</h2>
         </a>
 
         {%- if section.settings.blog_show_author -%}
@@ -35,16 +35,18 @@
         {%- endif -%}
 
         {%- if section.settings.blog_show_date -%}
-          <span>
+          <span class="article-card__info caption-with-letter-spacing h5">
             {{ article.published_at | time_tag: format: 'month_day_year' }}
           </span>
         {%- endif -%}
 
-        {%- if article.excerpt.size > 0 -%}
-          {{ article.excerpt }}
-        {%- else -%}
-          {{ article.content | strip_html | truncate: 150 }}
-        {%- endif -%}
+        <p class="article-card__excerpt rte-width">
+        	{%- if article.excerpt.size > 0 -%}
+          		{{ article.excerpt }}
+        	{%- else -%}
+          		{{ article.content | strip_html | truncate: 150 }}
+        	{%- endif -%}
+        </p>
 
         {%- if article.tags.size > 0 -%}
           <ul aria-label="{{ 'blogs.article.tags' }}">
