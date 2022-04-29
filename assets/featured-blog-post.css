@@ -7,3 +7,6 @@
    list-style: none;\
  }
 
+.featuredBlogPost img {
+  width: 90vw;
+}
