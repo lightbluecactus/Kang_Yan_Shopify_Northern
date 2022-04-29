@@ -6,3 +6,7 @@
  .featuredBlogPost ul {
    list-style: none;
  }
+
+.featuredBlogPost img {
+  width: 100%;
+}
