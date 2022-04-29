@@ -35,7 +35,7 @@
         {%- endif -%}
 
         {%- if section.settings.blog_show_date -%}
-          <span class="article-card__info caption-with-letter-spacing h5">
+          <span class="article-card__info caption-with-letter-spacing h5 featuredBlogPostDate" >
             {{ article.published_at | time_tag: format: 'month_day_year' }}
           </span>
         {%- endif -%}
