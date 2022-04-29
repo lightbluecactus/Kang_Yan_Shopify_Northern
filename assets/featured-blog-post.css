@@ -12,8 +12,7 @@
   height: auto;
 }
 
-.blogTags {
-  background-color: #FFA489;
-  color: #fff;
-  padding: 10px 20px;
+.readMoreBtn {
+  text-decoration: none;
+  
 }
