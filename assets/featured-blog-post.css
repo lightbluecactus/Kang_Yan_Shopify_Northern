@@ -10,13 +10,14 @@
 .featuredBlogPost img {
   width: 100%;
   height: auto;
+  margin-bottom: 50px;
 }
 
 .featuredBlogPostTitle {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
-.readMoreBtn {
+.featuredBlogPostReadMore {
   text-decoration: none; !important
   display: none;
 }
