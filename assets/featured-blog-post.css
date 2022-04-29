@@ -18,5 +18,5 @@
 
 .readMoreBtn {
   text-decoration: none; !important
-  
+  display: none;
 }
