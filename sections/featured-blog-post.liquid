@@ -12,7 +12,17 @@
       <li>
         <a href="{{ article.url }}">
           {%- if article.image -%}
-            {{ article | img_url: width: 500, scale: 2 | img_tag: '' }}
+            srcset="
+                {%- if article.image.width >= 550 -%}{{ article.image | image_url: width: 550 }} 550w,{%- endif -%}
+                {%- if article.image.width >= 720 -%}{{ article.image | image_url: width: 720 }} 720w,{%- endif -%}
+                {%- if article.image.width >= 990 -%}{{ article.image | image_url: width: 990 }} 990w,{%- endif -%}
+                {%- if article.image.width >= 1100 -%}{{ article.image | image_url: width: 1100 }} 1100w,{%- endif -%}
+                {%- if article.image.width >= 1500 -%}{{ article.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                {%- if article.image.width >= 2200 -%}{{ article.image | image_url: width: 2200 }} 2200w,{%- endif -%}
+                {%- if article.image.width >= 3000 -%}{{ article.image | image_url: width: 3000 }} 3000w,{%- endif -%}
+                {{ article.image | image_url }} {{ section.settings.image.width }}w"
+            sizes="{% if article.image != blank %}(min-width: 750px) 50vw, 100vw{% elsif article.image != blank %}50vw{% else %}100vw{% endif %}"
+            src="{{ article.image | image_url: width: 500 }}" alt="decoration image" width="500" height="200" loading="lazy">
           {%- endif -%}
           <h2>{{ article.title }}</h2>
         </a>
