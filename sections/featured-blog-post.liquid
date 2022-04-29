@@ -12,6 +12,7 @@
       <li>
         <a href="{{ article.url }}">
           {%- if article.image -%}
+            <img 
             srcset="
                 {%- if article.image.width >= 550 -%}{{ article.image | image_url: width: 550 }} 550w,{%- endif -%}
                 {%- if article.image.width >= 720 -%}{{ article.image | image_url: width: 720 }} 720w,{%- endif -%}
