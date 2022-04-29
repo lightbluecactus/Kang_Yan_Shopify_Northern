@@ -12,6 +12,10 @@
   height: auto;
 }
 
+.featuredBlogPostTitle {
+  margin-top: 50px;
+}
+
 .readMoreBtn {
   text-decoration: none; !important
   
