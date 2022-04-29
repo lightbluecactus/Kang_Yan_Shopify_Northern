@@ -14,6 +14,14 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .fileDownloader {
+    text-decoration: none;
+    color: #103948;
+    border-radius: 50px;
+    boeder: 3px solid #103948;
+    margin: 15px auto;
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -219,6 +227,13 @@
                 {{ form | payment_terms }}
               {%- endform -%}
             </div>
+
+            {% if product.metafields.files.file_downloader != blank %}
+              <a href="{{ product.metafields.files.file_downloader | file.url }}" download target="_blank" class="fileDownloader">
+                Download Product File
+              </a>
+            {% endif %}
+
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
