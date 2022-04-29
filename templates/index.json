@@ -361,22 +361,22 @@
             "heading_size": "h1"
           }
         },
-        "paragraph": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Join our email list to learn about exclusive showings and new collections.<\/p>"
-          }
-        },
         "form": {
           "type": "email_form",
           "settings": {
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>By registering your email in the form, you agree to receive newsletter from us. Subscribing is optional and you can cancel it at any time.<\/p>"
           }
         }
       },
       "block_order": [
         "heading",
-        "paragraph",
-        "form"
+        "form",
+        "paragraph"
       ],
       "settings": {
         "color_scheme": "background-1",
