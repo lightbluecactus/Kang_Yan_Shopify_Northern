@@ -1,1 +1,31 @@
-{"sections":{"main":{"type":"main-blog","settings":{"layout":"grid","show_image":true,"image_height":"large","show_date":true,"show_author":false,"padding_top":20,"padding_bottom":20}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "layout": "grid",
+        "show_image": true,
+        "image_height": "large",
+        "show_date": true,
+        "show_author": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "1651210179d1d175a1": {
+      "type": "featured-blog-post",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "",
+        "post_limit": 3,
+        "blog_show_author": false,
+        "blog_show_date": true,
+        "show_view_all": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1651210179d1d175a1"
+  ]
+}
