@@ -1,9 +1,20 @@
 {
   "sections": {
+    "1651210179d1d175a1": {
+      "type": "featured-blog-post",
+      "settings": {
+        "title": "Featured Blog posts",
+        "blog": "新聞",
+        "post_limit": 3,
+        "blog_show_author": false,
+        "blog_show_date": true,
+        "show_view_all": false
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
-        "layout": "grid",
+        "layout": "collage",
         "show_image": true,
         "image_height": "small",
         "show_date": true,
@@ -11,21 +22,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "1651210179d1d175a1": {
-      "type": "featured-blog-post",
-      "settings": {
-        "title": "Blog posts",
-        "blog": "新聞",
-        "post_limit": 3,
-        "blog_show_author": false,
-        "blog_show_date": true,
-        "show_view_all": false
-      }
     }
   },
   "order": [
-    "main",
-    "1651210179d1d175a1"
+    "1651210179d1d175a1",
+    "main"
   ]
 }
